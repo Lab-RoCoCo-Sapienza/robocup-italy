@@ -49,6 +49,15 @@ main.wrap { flex: 1; width: 100%; padding-top: 40px; padding-bottom: 64px; }
 .primary { display: flex; flex-direction: column; gap: 28px; }
 .sidebar { display: flex; flex-direction: column; gap: 20px; }
 
+/* home banner */
+/* photo: assets/img/italian-open.jpg (falls back to navy if missing) */
+.banner { display: flex; flex-direction: column; justify-content: flex-end; min-height: 380px; margin-bottom: 28px; padding: 40px; color: #fff; background: linear-gradient(to top, rgba(15, 27, 42, .88) 0%, rgba(15, 27, 42, .35) 60%, rgba(15, 27, 42, .1) 100%), url('img/italian-open.jpg') center 45% / cover no-repeat, var(--navy); box-shadow: 0 6px 18px rgba(31, 53, 80, .25); }
+.banner-kicker { align-self: flex-start; margin: 0 0 14px; padding: 5px 12px; border-radius: 4px; background: #fff; color: var(--navy); font: 700 13px var(--font); letter-spacing: .09em; text-transform: uppercase; }
+.banner-title { max-width: 14em; margin: 0 0 8px; font-size: 52px; line-height: 1.05; letter-spacing: -.01em; text-shadow: 0 2px 12px rgba(0, 0, 0, .35); }
+.banner-text { margin: 0 0 24px; font-size: 20px; line-height: 1.4; text-shadow: 0 1px 8px rgba(0, 0, 0, .35); }
+.banner-cta { display: inline-flex; align-self: flex-start; align-items: center; height: 36px; padding: 0 16px; border-radius: 4px; background: #fff; color: var(--navy); font: 700 13px var(--font); letter-spacing: .09em; text-transform: uppercase; text-decoration: none; transition: background .15s; }
+.banner-cta:hover { color: var(--navy); background: #e8edf3; }
+
 .block { background: var(--surface); border: 1px solid var(--rule); padding: 24px 28px; }
 .box { background: var(--surface); border: 1px solid var(--rule); border-left: 3px solid var(--accent); padding: 16px 20px; font-size: 16px; }
 .box h2 { font: 700 13px var(--font); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin: 0 0 8px; }
@@ -101,6 +110,9 @@ td:first-child { white-space: nowrap; font-weight: 700; }
   .dropdown-menu, .dropdown:hover .dropdown-menu { display: block; position: static; box-shadow: none; padding: 0; min-width: 0; }
   .dropdown-menu a { padding-left: 32px; }
   .block { padding: 18px 16px; }
+  .banner { min-height: 300px; padding: 24px 20px; }
+  .banner-title { font-size: 34px; }
+  .banner-text { font-size: 18px; }
   table, thead, tbody, tr, td { display: block; }
   thead { display: none; }
   tr { border-bottom: 1px solid var(--rule); padding: 10px 0; }
